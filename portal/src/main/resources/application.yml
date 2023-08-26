@@ -1,0 +1,36 @@
+spring:
+  servlet:
+    multipart:
+      max-file-size: 20MB
+      max-request-size: 50MB
+      enabled: true
+  #datasource:
+  #    driver-class-name: com.mysql.cj.jdbc.Driver
+  #    url: jdbc:mysql://localhost:3306/smartbot?useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT
+  #    username: smartbot
+  #    password: smartbot
+  #    type: com.alibaba.druid.pool.DruidDataSource
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/smartrobot?useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT
+    username: root
+    password: root
+    type: com.alibaba.druid.pool.DruidDataSource
+  data:
+    redis:
+      host: 47.113.149.48
+      port: 6379
+      password: 111241
+#data:
+#    redis:
+#      host: localhost
+#      port: 6379
+#      password: 111241
+server:
+  port: 8080
+  servlet:
+    encoding:
+      charset: utf-8
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

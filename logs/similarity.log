@@ -1,0 +1,518 @@
+2023-08-26 19:19:59,614 [main] INFO  c.s.starter.SmartbotApplication [Line:51 ] - Starting SmartbotApplication using Java 17.0.1 with PID 19836 (C:\newfolder\javaweb\smartbot\portal\target\classes started by 12135 in C:\newfolder\javaweb\smartbot)
+2023-08-26 19:19:59,626 [main] INFO  c.s.starter.SmartbotApplication [Line:630] - No active profile set, falling back to 1 default profile: "default"
+2023-08-26 19:20:00,789 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [Line:291] - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-08-26 19:20:00,792 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [Line:138] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-08-26 19:20:00,840 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [Line:208] - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2023-08-26 19:20:01,635 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [Line:108] - Tomcat initialized with port(s): 8080 (http)
+2023-08-26 19:20:01,650 [main] INFO  o.a.coyote.http11.Http11NioProtocol [Line:173] - Initializing ProtocolHandler ["http-nio-8080"]
+2023-08-26 19:20:01,651 [main] INFO  o.a.catalina.core.StandardService [Line:173] - Starting service [Tomcat]
+2023-08-26 19:20:01,651 [main] INFO  o.a.catalina.core.StandardEngine [Line:173] - Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-08-26 19:20:01,778 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [Line:173] - Initializing Spring embedded WebApplicationContext
+2023-08-26 19:20:01,778 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [Line:291] - Root WebApplicationContext: initialization completed in 2074 ms
+2023-08-26 19:20:02,726 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext [Line:592] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'task' defined in file [C:\newfolder\javaweb\smartbot\core\target\classes\com\smartbot\service\task.class]: Encountered invalid @Scheduled method 'test': Cron expression must consist of 6 fields (found 7 in "0/5 * * * * * *")
+2023-08-26 19:20:02,746 [main] INFO  o.a.catalina.core.StandardService [Line:173] - Stopping service [Tomcat]
+2023-08-26 19:20:02,804 [main] ERROR o.s.boot.SpringApplication [Line:820] - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'task' defined in file [C:\newfolder\javaweb\smartbot\core\target\classes\com\smartbot\service\task.class]: Encountered invalid @Scheduled method 'test': Cron expression must consist of 6 fields (found 7 in "0/5 * * * * * *")
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:606)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:961)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:915)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:584)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:432)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1291)
+	at com.smartbot.starter.SmartbotApplication.main(SmartbotApplication.java:15)
+Caused by: java.lang.IllegalStateException: Encountered invalid @Scheduled method 'test': Cron expression must consist of 6 fields (found 7 in "0/5 * * * * * *")
+	at org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor.processScheduled(ScheduledAnnotationBeanPostProcessor.java:517)
+	at org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor.lambda$postProcessAfterInitialization$1(ScheduledAnnotationBeanPostProcessor.java:379)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor.lambda$postProcessAfterInitialization$2(ScheduledAnnotationBeanPostProcessor.java:379)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:721)
+	at org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor.postProcessAfterInitialization(ScheduledAnnotationBeanPostProcessor.java:378)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:435)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1754)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599)
+	... 15 common frames omitted
+2023-08-26 19:21:20,846 [main] INFO  c.s.starter.SmartbotApplication [Line:51 ] - Starting SmartbotApplication using Java 17.0.1 with PID 12500 (C:\newfolder\javaweb\smartbot\portal\target\classes started by 12135 in C:\newfolder\javaweb\smartbot)
+2023-08-26 19:21:20,852 [main] INFO  c.s.starter.SmartbotApplication [Line:630] - No active profile set, falling back to 1 default profile: "default"
+2023-08-26 19:21:21,945 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [Line:291] - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-08-26 19:21:21,953 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [Line:138] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-08-26 19:21:21,999 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [Line:208] - Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2023-08-26 19:21:22,730 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [Line:108] - Tomcat initialized with port(s): 8080 (http)
+2023-08-26 19:21:22,741 [main] INFO  o.a.coyote.http11.Http11NioProtocol [Line:173] - Initializing ProtocolHandler ["http-nio-8080"]
+2023-08-26 19:21:22,742 [main] INFO  o.a.catalina.core.StandardService [Line:173] - Starting service [Tomcat]
+2023-08-26 19:21:22,743 [main] INFO  o.a.catalina.core.StandardEngine [Line:173] - Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-08-26 19:21:22,867 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [Line:173] - Initializing Spring embedded WebApplicationContext
+2023-08-26 19:21:22,867 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [Line:291] - Root WebApplicationContext: initialization completed in 1925 ms
+2023-08-26 19:21:23,798 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext [Line:592] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mytask' defined in file [C:\newfolder\javaweb\smartbot\core\target\classes\com\smartbot\service\mytask.class]: Encountered invalid @Scheduled method 'test': Cron expression must consist of 6 fields (found 7 in "0/5 * * * * * *")
+2023-08-26 19:21:23,815 [main] INFO  o.a.catalina.core.StandardService [Line:173] - Stopping service [Tomcat]
+2023-08-26 19:21:23,890 [main] ERROR o.s.boot.SpringApplication [Line:820] - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mytask' defined in file [C:\newfolder\javaweb\smartbot\core\target\classes\com\smartbot\service\mytask.class]: Encountered invalid @Scheduled method 'test': Cron expression must consist of 6 fields (found 7 in "0/5 * * * * * *")
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:606)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:961)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:915)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:584)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:432)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1291)
+	at com.smartbot.starter.SmartbotApplication.main(SmartbotApplication.java:15)
+Caused by: java.lang.IllegalStateException: Encountered invalid @Scheduled method 'test': Cron expression must consist of 6 fields (found 7 in "0/5 * * * * * *")
+	at org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor.processScheduled(ScheduledAnnotationBeanPostProcessor.java:517)
+	at org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor.lambda$postProcessAfterInitialization$1(ScheduledAnnotationBeanPostProcessor.java:379)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor.lambda$postProcessAfterInitialization$2(ScheduledAnnotationBeanPostProcessor.java:379)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:721)
+	at org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor.postProcessAfterInitialization(ScheduledAnnotationBeanPostProcessor.java:378)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:435)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1754)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599)
+	... 15 common frames omitted
+2023-08-26 19:21:36,138 [main] INFO  c.s.starter.SmartbotApplication [Line:51 ] - Starting SmartbotApplication using Java 17.0.1 with PID 7812 (C:\newfolder\javaweb\smartbot\portal\target\classes started by 12135 in C:\newfolder\javaweb\smartbot)
+2023-08-26 19:21:36,144 [main] INFO  c.s.starter.SmartbotApplication [Line:630] - No active profile set, falling back to 1 default profile: "default"
+2023-08-26 19:21:37,211 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [Line:291] - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-08-26 19:21:37,215 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [Line:138] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-08-26 19:21:37,256 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [Line:208] - Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2023-08-26 19:21:37,993 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [Line:108] - Tomcat initialized with port(s): 8080 (http)
+2023-08-26 19:21:38,011 [main] INFO  o.a.coyote.http11.Http11NioProtocol [Line:173] - Initializing ProtocolHandler ["http-nio-8080"]
+2023-08-26 19:21:38,012 [main] INFO  o.a.catalina.core.StandardService [Line:173] - Starting service [Tomcat]
+2023-08-26 19:21:38,013 [main] INFO  o.a.catalina.core.StandardEngine [Line:173] - Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-08-26 19:21:38,155 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [Line:173] - Initializing Spring embedded WebApplicationContext
+2023-08-26 19:21:38,156 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [Line:291] - Root WebApplicationContext: initialization completed in 1932 ms
+2023-08-26 19:21:39,761 [main] INFO  o.a.coyote.http11.Http11NioProtocol [Line:173] - Starting ProtocolHandler ["http-nio-8080"]
+2023-08-26 19:21:39,785 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [Line:220] - Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-26 19:21:39,812 [main] INFO  c.s.starter.SmartbotApplication [Line:57 ] - Started SmartbotApplication in 4.354 seconds (process running for 5.818)
+2023-08-26 19:22:13,203 [main] INFO  c.s.starter.SmartbotApplication [Line:51 ] - Starting SmartbotApplication using Java 17.0.1 with PID 14608 (C:\newfolder\javaweb\smartbot\portal\target\classes started by 12135 in C:\newfolder\javaweb\smartbot)
+2023-08-26 19:22:13,208 [main] INFO  c.s.starter.SmartbotApplication [Line:630] - No active profile set, falling back to 1 default profile: "default"
+2023-08-26 19:22:14,565 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [Line:291] - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-08-26 19:22:14,574 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [Line:138] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-08-26 19:22:14,630 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [Line:208] - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2023-08-26 19:22:15,485 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [Line:108] - Tomcat initialized with port(s): 8080 (http)
+2023-08-26 19:22:15,501 [main] INFO  o.a.coyote.http11.Http11NioProtocol [Line:173] - Initializing ProtocolHandler ["http-nio-8080"]
+2023-08-26 19:22:15,503 [main] INFO  o.a.catalina.core.StandardService [Line:173] - Starting service [Tomcat]
+2023-08-26 19:22:15,503 [main] INFO  o.a.catalina.core.StandardEngine [Line:173] - Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-08-26 19:22:15,627 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [Line:173] - Initializing Spring embedded WebApplicationContext
+2023-08-26 19:22:15,628 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [Line:291] - Root WebApplicationContext: initialization completed in 2336 ms
+2023-08-26 19:22:16,536 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext [Line:592] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mytask' defined in file [C:\newfolder\javaweb\smartbot\core\target\classes\com\smartbot\service\mytask.class]: Encountered invalid @Scheduled method 'test': Cron expression must consist of 6 fields (found 7 in "0/5 * * * * * *")
+2023-08-26 19:22:16,554 [main] INFO  o.a.catalina.core.StandardService [Line:173] - Stopping service [Tomcat]
+2023-08-26 19:22:16,611 [main] ERROR o.s.boot.SpringApplication [Line:820] - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mytask' defined in file [C:\newfolder\javaweb\smartbot\core\target\classes\com\smartbot\service\mytask.class]: Encountered invalid @Scheduled method 'test': Cron expression must consist of 6 fields (found 7 in "0/5 * * * * * *")
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:606)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:961)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:915)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:584)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:432)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1291)
+	at com.smartbot.starter.SmartbotApplication.main(SmartbotApplication.java:15)
+Caused by: java.lang.IllegalStateException: Encountered invalid @Scheduled method 'test': Cron expression must consist of 6 fields (found 7 in "0/5 * * * * * *")
+	at org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor.processScheduled(ScheduledAnnotationBeanPostProcessor.java:517)
+	at org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor.lambda$postProcessAfterInitialization$1(ScheduledAnnotationBeanPostProcessor.java:379)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor.lambda$postProcessAfterInitialization$2(ScheduledAnnotationBeanPostProcessor.java:379)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:721)
+	at org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor.postProcessAfterInitialization(ScheduledAnnotationBeanPostProcessor.java:378)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:435)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1754)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599)
+	... 15 common frames omitted
+2023-08-26 19:24:20,600 [main] INFO  c.s.starter.SmartbotApplication [Line:51 ] - Starting SmartbotApplication using Java 17.0.1 with PID 14772 (C:\newfolder\javaweb\smartbot\portal\target\classes started by 12135 in C:\newfolder\javaweb\smartbot)
+2023-08-26 19:24:20,606 [main] INFO  c.s.starter.SmartbotApplication [Line:630] - No active profile set, falling back to 1 default profile: "default"
+2023-08-26 19:24:21,697 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [Line:291] - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-08-26 19:24:21,701 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [Line:138] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-08-26 19:24:21,755 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [Line:208] - Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2023-08-26 19:24:22,570 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [Line:108] - Tomcat initialized with port(s): 8080 (http)
+2023-08-26 19:24:22,586 [main] INFO  o.a.coyote.http11.Http11NioProtocol [Line:173] - Initializing ProtocolHandler ["http-nio-8080"]
+2023-08-26 19:24:22,587 [main] INFO  o.a.catalina.core.StandardService [Line:173] - Starting service [Tomcat]
+2023-08-26 19:24:22,587 [main] INFO  o.a.catalina.core.StandardEngine [Line:173] - Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-08-26 19:24:22,734 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [Line:173] - Initializing Spring embedded WebApplicationContext
+2023-08-26 19:24:22,734 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [Line:291] - Root WebApplicationContext: initialization completed in 2049 ms
+2023-08-26 19:24:23,754 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext [Line:592] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mytask' defined in file [C:\newfolder\javaweb\smartbot\core\target\classes\com\smartbot\service\mytask.class]: Encountered invalid @Scheduled method 'test': Cron expression must consist of 6 fields (found 7 in "0/5 * * * * * *")
+2023-08-26 19:24:23,776 [main] INFO  o.a.catalina.core.StandardService [Line:173] - Stopping service [Tomcat]
+2023-08-26 19:24:23,835 [main] ERROR o.s.boot.SpringApplication [Line:820] - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mytask' defined in file [C:\newfolder\javaweb\smartbot\core\target\classes\com\smartbot\service\mytask.class]: Encountered invalid @Scheduled method 'test': Cron expression must consist of 6 fields (found 7 in "0/5 * * * * * *")
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:606)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:961)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:915)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:584)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:432)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1291)
+	at com.smartbot.starter.SmartbotApplication.main(SmartbotApplication.java:15)
+Caused by: java.lang.IllegalStateException: Encountered invalid @Scheduled method 'test': Cron expression must consist of 6 fields (found 7 in "0/5 * * * * * *")
+	at org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor.processScheduled(ScheduledAnnotationBeanPostProcessor.java:517)
+	at org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor.lambda$postProcessAfterInitialization$1(ScheduledAnnotationBeanPostProcessor.java:379)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor.lambda$postProcessAfterInitialization$2(ScheduledAnnotationBeanPostProcessor.java:379)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:721)
+	at org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor.postProcessAfterInitialization(ScheduledAnnotationBeanPostProcessor.java:378)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:435)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1754)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599)
+	... 15 common frames omitted
+2023-08-26 19:24:59,084 [main] INFO  c.s.starter.SmartbotApplication [Line:51 ] - Starting SmartbotApplication using Java 17.0.1 with PID 18620 (C:\newfolder\javaweb\smartbot\portal\target\classes started by 12135 in C:\newfolder\javaweb\smartbot)
+2023-08-26 19:24:59,091 [main] INFO  c.s.starter.SmartbotApplication [Line:630] - No active profile set, falling back to 1 default profile: "default"
+2023-08-26 19:25:00,128 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [Line:291] - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-08-26 19:25:00,132 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [Line:138] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-08-26 19:25:00,176 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [Line:208] - Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2023-08-26 19:25:00,947 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [Line:108] - Tomcat initialized with port(s): 8080 (http)
+2023-08-26 19:25:00,963 [main] INFO  o.a.coyote.http11.Http11NioProtocol [Line:173] - Initializing ProtocolHandler ["http-nio-8080"]
+2023-08-26 19:25:00,965 [main] INFO  o.a.catalina.core.StandardService [Line:173] - Starting service [Tomcat]
+2023-08-26 19:25:00,965 [main] INFO  o.a.catalina.core.StandardEngine [Line:173] - Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-08-26 19:25:01,084 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [Line:173] - Initializing Spring embedded WebApplicationContext
+2023-08-26 19:25:01,085 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [Line:291] - Root WebApplicationContext: initialization completed in 1904 ms
+2023-08-26 19:25:01,158 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext [Line:592] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mytask' defined in file [C:\newfolder\javaweb\smartbot\portal\target\classes\com\smartbot\starter\mytask.class]: Encountered invalid @Scheduled method 'test': Cron expression must consist of 6 fields (found 7 in "0/5 * * * * * *")
+2023-08-26 19:25:01,161 [main] INFO  o.a.catalina.core.StandardService [Line:173] - Stopping service [Tomcat]
+2023-08-26 19:25:01,226 [main] ERROR o.s.boot.SpringApplication [Line:820] - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mytask' defined in file [C:\newfolder\javaweb\smartbot\portal\target\classes\com\smartbot\starter\mytask.class]: Encountered invalid @Scheduled method 'test': Cron expression must consist of 6 fields (found 7 in "0/5 * * * * * *")
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:606)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:961)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:915)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:584)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:432)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1291)
+	at com.smartbot.starter.SmartbotApplication.main(SmartbotApplication.java:15)
+Caused by: java.lang.IllegalStateException: Encountered invalid @Scheduled method 'test': Cron expression must consist of 6 fields (found 7 in "0/5 * * * * * *")
+	at org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor.processScheduled(ScheduledAnnotationBeanPostProcessor.java:517)
+	at org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor.lambda$postProcessAfterInitialization$1(ScheduledAnnotationBeanPostProcessor.java:379)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor.lambda$postProcessAfterInitialization$2(ScheduledAnnotationBeanPostProcessor.java:379)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:721)
+	at org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor.postProcessAfterInitialization(ScheduledAnnotationBeanPostProcessor.java:378)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:435)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1754)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599)
+	... 15 common frames omitted
+2023-08-26 19:25:28,333 [main] INFO  c.s.starter.SmartbotApplication [Line:51 ] - Starting SmartbotApplication using Java 17.0.1 with PID 16156 (C:\newfolder\javaweb\smartbot\portal\target\classes started by 12135 in C:\newfolder\javaweb\smartbot)
+2023-08-26 19:25:28,339 [main] INFO  c.s.starter.SmartbotApplication [Line:630] - No active profile set, falling back to 1 default profile: "default"
+2023-08-26 19:25:29,382 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [Line:291] - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-08-26 19:25:29,386 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [Line:138] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-08-26 19:25:29,430 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [Line:208] - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2023-08-26 19:25:30,189 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [Line:108] - Tomcat initialized with port(s): 8080 (http)
+2023-08-26 19:25:30,200 [main] INFO  o.a.coyote.http11.Http11NioProtocol [Line:173] - Initializing ProtocolHandler ["http-nio-8080"]
+2023-08-26 19:25:30,201 [main] INFO  o.a.catalina.core.StandardService [Line:173] - Starting service [Tomcat]
+2023-08-26 19:25:30,201 [main] INFO  o.a.catalina.core.StandardEngine [Line:173] - Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-08-26 19:25:30,320 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [Line:173] - Initializing Spring embedded WebApplicationContext
+2023-08-26 19:25:30,321 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [Line:291] - Root WebApplicationContext: initialization completed in 1890 ms
+2023-08-26 19:25:30,403 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext [Line:592] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mytask111' defined in file [C:\newfolder\javaweb\smartbot\portal\target\classes\com\smartbot\starter\mytask111.class]: Encountered invalid @Scheduled method 'test': Cron expression must consist of 6 fields (found 7 in "0/5 * * * * * *")
+2023-08-26 19:25:30,407 [main] INFO  o.a.catalina.core.StandardService [Line:173] - Stopping service [Tomcat]
+2023-08-26 19:25:30,482 [main] ERROR o.s.boot.SpringApplication [Line:820] - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mytask111' defined in file [C:\newfolder\javaweb\smartbot\portal\target\classes\com\smartbot\starter\mytask111.class]: Encountered invalid @Scheduled method 'test': Cron expression must consist of 6 fields (found 7 in "0/5 * * * * * *")
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:606)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:961)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:915)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:584)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:432)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1291)
+	at com.smartbot.starter.SmartbotApplication.main(SmartbotApplication.java:15)
+Caused by: java.lang.IllegalStateException: Encountered invalid @Scheduled method 'test': Cron expression must consist of 6 fields (found 7 in "0/5 * * * * * *")
+	at org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor.processScheduled(ScheduledAnnotationBeanPostProcessor.java:517)
+	at org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor.lambda$postProcessAfterInitialization$1(ScheduledAnnotationBeanPostProcessor.java:379)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor.lambda$postProcessAfterInitialization$2(ScheduledAnnotationBeanPostProcessor.java:379)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:721)
+	at org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor.postProcessAfterInitialization(ScheduledAnnotationBeanPostProcessor.java:378)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:435)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1754)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599)
+	... 15 common frames omitted
+2023-08-26 19:26:54,659 [main] INFO  c.s.starter.SmartbotApplication [Line:51 ] - Starting SmartbotApplication using Java 17.0.1 with PID 12196 (C:\newfolder\javaweb\smartbot\portal\target\classes started by 12135 in C:\newfolder\javaweb\smartbot)
+2023-08-26 19:26:54,666 [main] INFO  c.s.starter.SmartbotApplication [Line:630] - No active profile set, falling back to 1 default profile: "default"
+2023-08-26 19:26:55,663 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [Line:291] - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-08-26 19:26:55,666 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [Line:138] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-08-26 19:26:55,707 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [Line:208] - Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2023-08-26 19:26:56,418 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [Line:108] - Tomcat initialized with port(s): 8080 (http)
+2023-08-26 19:26:56,429 [main] INFO  o.a.coyote.http11.Http11NioProtocol [Line:173] - Initializing ProtocolHandler ["http-nio-8080"]
+2023-08-26 19:26:56,430 [main] INFO  o.a.catalina.core.StandardService [Line:173] - Starting service [Tomcat]
+2023-08-26 19:26:56,431 [main] INFO  o.a.catalina.core.StandardEngine [Line:173] - Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-08-26 19:26:56,548 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [Line:173] - Initializing Spring embedded WebApplicationContext
+2023-08-26 19:26:56,549 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [Line:291] - Root WebApplicationContext: initialization completed in 1809 ms
+2023-08-26 19:26:56,618 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext [Line:592] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mytask111' defined in file [C:\newfolder\javaweb\smartbot\portal\target\classes\com\smartbot\starter\tasks\mytask111.class]: Encountered invalid @Scheduled method 'test': Cron expression must consist of 6 fields (found 7 in "0/5 * * * * * *")
+2023-08-26 19:26:56,621 [main] INFO  o.a.catalina.core.StandardService [Line:173] - Stopping service [Tomcat]
+2023-08-26 19:26:56,680 [main] ERROR o.s.boot.SpringApplication [Line:820] - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mytask111' defined in file [C:\newfolder\javaweb\smartbot\portal\target\classes\com\smartbot\starter\tasks\mytask111.class]: Encountered invalid @Scheduled method 'test': Cron expression must consist of 6 fields (found 7 in "0/5 * * * * * *")
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:606)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:961)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:915)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:584)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:432)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1291)
+	at com.smartbot.starter.SmartbotApplication.main(SmartbotApplication.java:15)
+Caused by: java.lang.IllegalStateException: Encountered invalid @Scheduled method 'test': Cron expression must consist of 6 fields (found 7 in "0/5 * * * * * *")
+	at org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor.processScheduled(ScheduledAnnotationBeanPostProcessor.java:517)
+	at org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor.lambda$postProcessAfterInitialization$1(ScheduledAnnotationBeanPostProcessor.java:379)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor.lambda$postProcessAfterInitialization$2(ScheduledAnnotationBeanPostProcessor.java:379)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:721)
+	at org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor.postProcessAfterInitialization(ScheduledAnnotationBeanPostProcessor.java:378)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:435)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1754)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599)
+	... 15 common frames omitted
+2023-08-26 19:27:05,598 [main] INFO  c.s.starter.SmartbotApplication [Line:51 ] - Starting SmartbotApplication using Java 17.0.1 with PID 17440 (C:\newfolder\javaweb\smartbot\portal\target\classes started by 12135 in C:\newfolder\javaweb\smartbot)
+2023-08-26 19:27:05,604 [main] INFO  c.s.starter.SmartbotApplication [Line:630] - No active profile set, falling back to 1 default profile: "default"
+2023-08-26 19:27:06,733 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [Line:291] - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-08-26 19:27:06,736 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [Line:138] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-08-26 19:27:06,777 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [Line:208] - Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2023-08-26 19:27:07,532 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [Line:108] - Tomcat initialized with port(s): 8080 (http)
+2023-08-26 19:27:07,545 [main] INFO  o.a.coyote.http11.Http11NioProtocol [Line:173] - Initializing ProtocolHandler ["http-nio-8080"]
+2023-08-26 19:27:07,546 [main] INFO  o.a.catalina.core.StandardService [Line:173] - Starting service [Tomcat]
+2023-08-26 19:27:07,547 [main] INFO  o.a.catalina.core.StandardEngine [Line:173] - Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-08-26 19:27:07,666 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [Line:173] - Initializing Spring embedded WebApplicationContext
+2023-08-26 19:27:07,667 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [Line:291] - Root WebApplicationContext: initialization completed in 1952 ms
+2023-08-26 19:27:07,739 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext [Line:592] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mytask111' defined in file [C:\newfolder\javaweb\smartbot\portal\target\classes\com\smartbot\starter\tasks\mytask111.class]: Encountered invalid @Scheduled method 'test111': Cron expression must consist of 6 fields (found 7 in "0/5 * * * * * *")
+2023-08-26 19:27:07,742 [main] INFO  o.a.catalina.core.StandardService [Line:173] - Stopping service [Tomcat]
+2023-08-26 19:27:07,803 [main] ERROR o.s.boot.SpringApplication [Line:820] - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mytask111' defined in file [C:\newfolder\javaweb\smartbot\portal\target\classes\com\smartbot\starter\tasks\mytask111.class]: Encountered invalid @Scheduled method 'test111': Cron expression must consist of 6 fields (found 7 in "0/5 * * * * * *")
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:606)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:961)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:915)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:584)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:432)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1291)
+	at com.smartbot.starter.SmartbotApplication.main(SmartbotApplication.java:15)
+Caused by: java.lang.IllegalStateException: Encountered invalid @Scheduled method 'test111': Cron expression must consist of 6 fields (found 7 in "0/5 * * * * * *")
+	at org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor.processScheduled(ScheduledAnnotationBeanPostProcessor.java:517)
+	at org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor.lambda$postProcessAfterInitialization$1(ScheduledAnnotationBeanPostProcessor.java:379)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor.lambda$postProcessAfterInitialization$2(ScheduledAnnotationBeanPostProcessor.java:379)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:721)
+	at org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor.postProcessAfterInitialization(ScheduledAnnotationBeanPostProcessor.java:378)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:435)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1754)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599)
+	... 15 common frames omitted
+2023-08-26 19:27:31,051 [main] INFO  c.s.starter.SmartbotApplication [Line:51 ] - Starting SmartbotApplication using Java 17.0.1 with PID 11060 (C:\newfolder\javaweb\smartbot\portal\target\classes started by 12135 in C:\newfolder\javaweb\smartbot)
+2023-08-26 19:27:31,056 [main] INFO  c.s.starter.SmartbotApplication [Line:630] - No active profile set, falling back to 1 default profile: "default"
+2023-08-26 19:27:32,179 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [Line:291] - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-08-26 19:27:32,182 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [Line:138] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-08-26 19:27:32,231 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [Line:208] - Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2023-08-26 19:27:32,982 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [Line:108] - Tomcat initialized with port(s): 8080 (http)
+2023-08-26 19:27:32,994 [main] INFO  o.a.coyote.http11.Http11NioProtocol [Line:173] - Initializing ProtocolHandler ["http-nio-8080"]
+2023-08-26 19:27:32,995 [main] INFO  o.a.catalina.core.StandardService [Line:173] - Starting service [Tomcat]
+2023-08-26 19:27:32,995 [main] INFO  o.a.catalina.core.StandardEngine [Line:173] - Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-08-26 19:27:33,111 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [Line:173] - Initializing Spring embedded WebApplicationContext
+2023-08-26 19:27:33,112 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [Line:291] - Root WebApplicationContext: initialization completed in 1978 ms
+2023-08-26 19:27:33,183 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext [Line:592] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mytask111' defined in file [C:\newfolder\javaweb\smartbot\portal\target\classes\com\smartbot\starter\tasks\mytask111.class]: Encountered invalid @Scheduled method 'test111': Cron expression must consist of 6 fields (found 7 in "0/5 * * * * * *")
+2023-08-26 19:27:33,186 [main] INFO  o.a.catalina.core.StandardService [Line:173] - Stopping service [Tomcat]
+2023-08-26 19:27:33,250 [main] ERROR o.s.boot.SpringApplication [Line:820] - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mytask111' defined in file [C:\newfolder\javaweb\smartbot\portal\target\classes\com\smartbot\starter\tasks\mytask111.class]: Encountered invalid @Scheduled method 'test111': Cron expression must consist of 6 fields (found 7 in "0/5 * * * * * *")
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:606)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:961)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:915)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:584)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:432)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1291)
+	at com.smartbot.starter.SmartbotApplication.main(SmartbotApplication.java:15)
+Caused by: java.lang.IllegalStateException: Encountered invalid @Scheduled method 'test111': Cron expression must consist of 6 fields (found 7 in "0/5 * * * * * *")
+	at org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor.processScheduled(ScheduledAnnotationBeanPostProcessor.java:517)
+	at org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor.lambda$postProcessAfterInitialization$1(ScheduledAnnotationBeanPostProcessor.java:379)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor.lambda$postProcessAfterInitialization$2(ScheduledAnnotationBeanPostProcessor.java:379)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:721)
+	at org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor.postProcessAfterInitialization(ScheduledAnnotationBeanPostProcessor.java:378)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:435)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1754)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599)
+	... 15 common frames omitted
+2023-08-26 19:27:47,174 [main] INFO  c.s.starter.SmartbotApplication [Line:51 ] - Starting SmartbotApplication using Java 17.0.1 with PID 19204 (C:\newfolder\javaweb\smartbot\portal\target\classes started by 12135 in C:\newfolder\javaweb\smartbot)
+2023-08-26 19:27:47,178 [main] INFO  c.s.starter.SmartbotApplication [Line:630] - No active profile set, falling back to 1 default profile: "default"
+2023-08-26 19:27:48,285 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [Line:291] - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-08-26 19:27:48,288 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [Line:138] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-08-26 19:27:48,332 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [Line:208] - Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2023-08-26 19:27:49,051 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [Line:108] - Tomcat initialized with port(s): 8080 (http)
+2023-08-26 19:27:49,065 [main] INFO  o.a.coyote.http11.Http11NioProtocol [Line:173] - Initializing ProtocolHandler ["http-nio-8080"]
+2023-08-26 19:27:49,066 [main] INFO  o.a.catalina.core.StandardService [Line:173] - Starting service [Tomcat]
+2023-08-26 19:27:49,066 [main] INFO  o.a.catalina.core.StandardEngine [Line:173] - Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-08-26 19:27:49,187 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [Line:173] - Initializing Spring embedded WebApplicationContext
+2023-08-26 19:27:49,188 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [Line:291] - Root WebApplicationContext: initialization completed in 1932 ms
+2023-08-26 19:27:49,278 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext [Line:592] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mytask111' defined in file [C:\newfolder\javaweb\smartbot\portal\target\classes\com\smartbot\starter\tasks\mytask111.class]: Encountered invalid @Scheduled method 'test111': Cron expression must consist of 6 fields (found 7 in "0/5 * * * * * *")
+2023-08-26 19:27:49,281 [main] INFO  o.a.catalina.core.StandardService [Line:173] - Stopping service [Tomcat]
+2023-08-26 19:27:49,367 [main] ERROR o.s.boot.SpringApplication [Line:820] - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mytask111' defined in file [C:\newfolder\javaweb\smartbot\portal\target\classes\com\smartbot\starter\tasks\mytask111.class]: Encountered invalid @Scheduled method 'test111': Cron expression must consist of 6 fields (found 7 in "0/5 * * * * * *")
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:606)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:961)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:915)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:584)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:432)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1291)
+	at com.smartbot.starter.SmartbotApplication.main(SmartbotApplication.java:14)
+Caused by: java.lang.IllegalStateException: Encountered invalid @Scheduled method 'test111': Cron expression must consist of 6 fields (found 7 in "0/5 * * * * * *")
+	at org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor.processScheduled(ScheduledAnnotationBeanPostProcessor.java:517)
+	at org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor.lambda$postProcessAfterInitialization$1(ScheduledAnnotationBeanPostProcessor.java:379)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor.lambda$postProcessAfterInitialization$2(ScheduledAnnotationBeanPostProcessor.java:379)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:721)
+	at org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor.postProcessAfterInitialization(ScheduledAnnotationBeanPostProcessor.java:378)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:435)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1754)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599)
+	... 15 common frames omitted
+2023-08-26 19:28:00,935 [main] INFO  c.s.starter.SmartbotApplication [Line:51 ] - Starting SmartbotApplication using Java 17.0.1 with PID 9464 (C:\newfolder\javaweb\smartbot\portal\target\classes started by 12135 in C:\newfolder\javaweb\smartbot)
+2023-08-26 19:28:00,940 [main] INFO  c.s.starter.SmartbotApplication [Line:630] - No active profile set, falling back to 1 default profile: "default"
+2023-08-26 19:28:01,930 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [Line:291] - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-08-26 19:28:01,933 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [Line:138] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-08-26 19:28:01,978 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [Line:208] - Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2023-08-26 19:28:02,676 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [Line:108] - Tomcat initialized with port(s): 8080 (http)
+2023-08-26 19:28:02,686 [main] INFO  o.a.coyote.http11.Http11NioProtocol [Line:173] - Initializing ProtocolHandler ["http-nio-8080"]
+2023-08-26 19:28:02,687 [main] INFO  o.a.catalina.core.StandardService [Line:173] - Starting service [Tomcat]
+2023-08-26 19:28:02,688 [main] INFO  o.a.catalina.core.StandardEngine [Line:173] - Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-08-26 19:28:02,800 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [Line:173] - Initializing Spring embedded WebApplicationContext
+2023-08-26 19:28:02,801 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [Line:291] - Root WebApplicationContext: initialization completed in 1790 ms
+2023-08-26 19:28:04,080 [main] INFO  o.a.coyote.http11.Http11NioProtocol [Line:173] - Starting ProtocolHandler ["http-nio-8080"]
+2023-08-26 19:28:04,101 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [Line:220] - Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-26 19:28:04,118 [main] INFO  c.s.starter.SmartbotApplication [Line:57 ] - Started SmartbotApplication in 3.799 seconds (process running for 4.982)
+2023-08-26 19:28:20,329 [main] INFO  c.s.starter.SmartbotApplication [Line:51 ] - Starting SmartbotApplication using Java 17.0.1 with PID 8512 (C:\newfolder\javaweb\smartbot\portal\target\classes started by 12135 in C:\newfolder\javaweb\smartbot)
+2023-08-26 19:28:20,333 [main] INFO  c.s.starter.SmartbotApplication [Line:630] - No active profile set, falling back to 1 default profile: "default"
+2023-08-26 19:28:21,487 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [Line:291] - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-08-26 19:28:21,491 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [Line:138] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-08-26 19:28:21,534 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [Line:208] - Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2023-08-26 19:28:22,269 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [Line:108] - Tomcat initialized with port(s): 8080 (http)
+2023-08-26 19:28:22,282 [main] INFO  o.a.coyote.http11.Http11NioProtocol [Line:173] - Initializing ProtocolHandler ["http-nio-8080"]
+2023-08-26 19:28:22,283 [main] INFO  o.a.catalina.core.StandardService [Line:173] - Starting service [Tomcat]
+2023-08-26 19:28:22,283 [main] INFO  o.a.catalina.core.StandardEngine [Line:173] - Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-08-26 19:28:22,398 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [Line:173] - Initializing Spring embedded WebApplicationContext
+2023-08-26 19:28:22,399 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [Line:291] - Root WebApplicationContext: initialization completed in 1991 ms
+2023-08-26 19:28:23,787 [main] INFO  o.a.coyote.http11.Http11NioProtocol [Line:173] - Starting ProtocolHandler ["http-nio-8080"]
+2023-08-26 19:28:23,813 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [Line:220] - Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-26 19:28:23,843 [main] INFO  c.s.starter.SmartbotApplication [Line:57 ] - Started SmartbotApplication in 4.157 seconds (process running for 5.547)
+2023-08-26 19:28:38,991 [main] INFO  c.s.starter.SmartbotApplication [Line:51 ] - Starting SmartbotApplication using Java 17.0.1 with PID 20200 (C:\newfolder\javaweb\smartbot\portal\target\classes started by 12135 in C:\newfolder\javaweb\smartbot)
+2023-08-26 19:28:38,996 [main] INFO  c.s.starter.SmartbotApplication [Line:630] - No active profile set, falling back to 1 default profile: "default"
+2023-08-26 19:28:39,987 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [Line:291] - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-08-26 19:28:39,990 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [Line:138] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-08-26 19:28:40,032 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [Line:208] - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2023-08-26 19:28:40,799 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [Line:108] - Tomcat initialized with port(s): 8080 (http)
+2023-08-26 19:28:40,810 [main] INFO  o.a.coyote.http11.Http11NioProtocol [Line:173] - Initializing ProtocolHandler ["http-nio-8080"]
+2023-08-26 19:28:40,810 [main] INFO  o.a.catalina.core.StandardService [Line:173] - Starting service [Tomcat]
+2023-08-26 19:28:40,811 [main] INFO  o.a.catalina.core.StandardEngine [Line:173] - Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-08-26 19:28:40,928 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [Line:173] - Initializing Spring embedded WebApplicationContext
+2023-08-26 19:28:40,929 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [Line:291] - Root WebApplicationContext: initialization completed in 1857 ms
+2023-08-26 19:28:41,005 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext [Line:592] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mytask111' defined in file [C:\newfolder\javaweb\smartbot\portal\target\classes\com\smartbot\starter\tasks\mytask111.class]: Encountered invalid @Scheduled method 'test111': Exactly one of the 'cron', 'fixedDelay(String)', or 'fixedRate(String)' attributes is required
+2023-08-26 19:28:41,008 [main] INFO  o.a.catalina.core.StandardService [Line:173] - Stopping service [Tomcat]
+2023-08-26 19:28:41,066 [main] ERROR o.s.boot.SpringApplication [Line:820] - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mytask111' defined in file [C:\newfolder\javaweb\smartbot\portal\target\classes\com\smartbot\starter\tasks\mytask111.class]: Encountered invalid @Scheduled method 'test111': Exactly one of the 'cron', 'fixedDelay(String)', or 'fixedRate(String)' attributes is required
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:606)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:961)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:915)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:584)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:432)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1291)
+	at com.smartbot.starter.SmartbotApplication.main(SmartbotApplication.java:14)
+Caused by: java.lang.IllegalStateException: Encountered invalid @Scheduled method 'test111': Exactly one of the 'cron', 'fixedDelay(String)', or 'fixedRate(String)' attributes is required
+	at org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor.processScheduled(ScheduledAnnotationBeanPostProcessor.java:517)
+	at org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor.lambda$postProcessAfterInitialization$1(ScheduledAnnotationBeanPostProcessor.java:379)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor.lambda$postProcessAfterInitialization$2(ScheduledAnnotationBeanPostProcessor.java:379)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:721)
+	at org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor.postProcessAfterInitialization(ScheduledAnnotationBeanPostProcessor.java:378)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:435)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1754)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599)
+	... 15 common frames omitted
+2023-08-26 19:29:06,971 [main] INFO  c.s.starter.SmartbotApplication [Line:51 ] - Starting SmartbotApplication using Java 17.0.1 with PID 23016 (C:\newfolder\javaweb\smartbot\portal\target\classes started by 12135 in C:\newfolder\javaweb\smartbot)
+2023-08-26 19:29:06,975 [main] INFO  c.s.starter.SmartbotApplication [Line:630] - No active profile set, falling back to 1 default profile: "default"
+2023-08-26 19:29:07,951 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [Line:291] - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-08-26 19:29:07,960 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [Line:138] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-08-26 19:29:08,001 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [Line:208] - Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2023-08-26 19:29:08,788 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [Line:108] - Tomcat initialized with port(s): 8080 (http)
+2023-08-26 19:29:08,803 [main] INFO  o.a.coyote.http11.Http11NioProtocol [Line:173] - Initializing ProtocolHandler ["http-nio-8080"]
+2023-08-26 19:29:08,804 [main] INFO  o.a.catalina.core.StandardService [Line:173] - Starting service [Tomcat]
+2023-08-26 19:29:08,804 [main] INFO  o.a.catalina.core.StandardEngine [Line:173] - Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-08-26 19:29:08,917 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [Line:173] - Initializing Spring embedded WebApplicationContext
+2023-08-26 19:29:08,918 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [Line:291] - Root WebApplicationContext: initialization completed in 1878 ms
+2023-08-26 19:29:10,422 [main] INFO  o.a.coyote.http11.Http11NioProtocol [Line:173] - Starting ProtocolHandler ["http-nio-8080"]
+2023-08-26 19:29:10,442 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [Line:220] - Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-26 19:29:10,466 [main] INFO  c.s.starter.SmartbotApplication [Line:57 ] - Started SmartbotApplication in 4.168 seconds (process running for 5.716)

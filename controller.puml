@@ -1,0 +1,77 @@
+@startuml
+class com.smartbot.controller.User.useremailcontroller {
+~ Useremail useremail
++ Result check(HttpSession)
++ Result changeemail(User,HttpSession)
+}
+class com.smartbot.controller.Forget.forgetcontroller {
+~ Forget forget
++ Result querypassword(User)
+}
+class com.smartbot.controller.Login.logincontroller {
+~ Login login
++ Result logincheck(HttpSession,User)
++ String checkcode(HttpSession,HttpServletResponse)
+}
+class com.smartbot.controller.Admin.adminapplycontroller {
+~ Adminapply adminapply
++ Result query(Pagebean)
++ Result accept(User)
++ Result refuse(User)
+}
+class com.smartbot.controller.User.userhomecontroller {
+- Userhome userhome
++ Result findhotest()
++ Result query(Question)
++ Result submit(QA,HttpSession)
++ Result satisfied(QA,HttpSession)
++ Result unsatisfied(Answer)
++ Result addhot(Question)
+}
+class com.smartbot.controller.Register.registercontroller {
+~ Register register
++ Result registercheck(User)
++ Result register(User)
+}
+class com.smartbot.controller.Testcontroller {
++ String test(List<String>)
++ String register(String)
+}
+class com.smartbot.controller.Admin.adminmanagement {
+~ Adminmanagement adminmanagement
++ Result delete(Question)
+}
+class com.smartbot.controller.User.userauthcontroller {
+~ Userauth userauth
+~ Result findprogress(HttpSession)
+~ Result apply(Auth,HttpSession)
+}
+class com.smartbot.controller.User.useravatarcontroller {
+~ Avatar avatar
++ Result addavatar(MultipartFile,HttpSession)
+}
+class com.smartbot.controller.User.usercommunity {
+- Usercommunity usercommunity
++ Result query(Pagebean,HttpSession)
++ Result querydetail(Question,HttpSession)
++ Result mygood(Answer,HttpSession)
++ Result mybad(Answer,HttpSession)
++ Result newreply(Answer,HttpSession)
++ Result update(Answer,HttpSession)
++ Result delete(Answer)
++ Result historygood(Answer,HttpSession)
+}
+class com.smartbot.controller.User.userhistorycontroller {
+~ Userhistory userhistory
++ Result solved(Pagebean,HttpSession)
++ Result unsolved(Pagebean,HttpSession)
+}
+class com.smartbot.controller.User.usermanagementcontroller {
+~ Usermanagement usermanagement
+~ Result changepassword(User,HttpSession)
+}
+class com.smartbot.controller.User.usercontroller {
+- Usercommon usercommon
++ Result getavatar(HttpSession)
+}
+@enduml

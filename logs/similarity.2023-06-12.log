@@ -1,0 +1,242 @@
+2023-06-12 20:54:53,012 [main] INFO  c.s.starter.SmartbotApplication [Line:51 ] - Starting SmartbotApplication using Java 17.0.1 with PID 17120 (C:\newfolder\javaweb\smartbot\portal\target\classes started by 12135 in C:\newfolder\javaweb\smartbot)
+2023-06-12 20:54:53,026 [main] INFO  c.s.starter.SmartbotApplication [Line:630] - No active profile set, falling back to 1 default profile: "default"
+2023-06-12 20:54:54,511 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [Line:291] - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-06-12 20:54:54,530 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [Line:138] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-06-12 20:54:54,584 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [Line:208] - Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2023-06-12 20:54:55,973 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [Line:108] - Tomcat initialized with port(s): 8080 (http)
+2023-06-12 20:54:55,993 [main] INFO  o.a.coyote.http11.Http11NioProtocol [Line:173] - Initializing ProtocolHandler ["http-nio-8080"]
+2023-06-12 20:54:55,994 [main] INFO  o.a.catalina.core.StandardService [Line:173] - Starting service [Tomcat]
+2023-06-12 20:54:55,995 [main] INFO  o.a.catalina.core.StandardEngine [Line:173] - Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-06-12 20:54:56,173 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [Line:173] - Initializing Spring embedded WebApplicationContext
+2023-06-12 20:54:56,174 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [Line:291] - Root WebApplicationContext: initialization completed in 3058 ms
+2023-06-12 20:54:58,519 [main] INFO  o.a.coyote.http11.Http11NioProtocol [Line:173] - Starting ProtocolHandler ["http-nio-8080"]
+2023-06-12 20:54:58,559 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [Line:220] - Tomcat started on port(s): 8080 (http) with context path ''
+2023-06-12 20:54:58,590 [main] INFO  c.s.starter.SmartbotApplication [Line:57 ] - Started SmartbotApplication in 6.703 seconds (process running for 8.75)
+2023-06-12 20:55:50,988 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [Line:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-12 20:55:50,988 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet [Line:532] - Initializing Servlet 'dispatcherServlet'
+2023-06-12 20:55:50,989 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet [Line:554] - Completed initialization in 1 ms
+2023-06-12 20:55:51,009 [http-nio-8080-exec-2] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] [Line:175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.web.multipart.MultipartException: Failed to parse multipart servlet request] with root cause
+org.apache.tomcat.util.http.fileupload.FileUploadException: the request was rejected because no multipart boundary was found
+	at org.apache.tomcat.util.http.fileupload.impl.FileItemIteratorImpl.init(FileItemIteratorImpl.java:189)
+	at org.apache.tomcat.util.http.fileupload.impl.FileItemIteratorImpl.getMultiPartStream(FileItemIteratorImpl.java:205)
+	at org.apache.tomcat.util.http.fileupload.impl.FileItemIteratorImpl.findNextItem(FileItemIteratorImpl.java:224)
+	at org.apache.tomcat.util.http.fileupload.impl.FileItemIteratorImpl.<init>(FileItemIteratorImpl.java:142)
+	at org.apache.tomcat.util.http.fileupload.FileUploadBase.getItemIterator(FileUploadBase.java:252)
+	at org.apache.tomcat.util.http.fileupload.FileUploadBase.parseRequest(FileUploadBase.java:276)
+	at org.apache.catalina.connector.Request.parseParts(Request.java:2884)
+	at org.apache.catalina.connector.Request.getParts(Request.java:2778)
+	at org.apache.catalina.connector.RequestFacade.getParts(RequestFacade.java:1074)
+	at org.springframework.web.multipart.support.StandardMultipartHttpServletRequest.parseRequest(StandardMultipartHttpServletRequest.java:93)
+	at org.springframework.web.multipart.support.StandardMultipartHttpServletRequest.<init>(StandardMultipartHttpServletRequest.java:86)
+	at org.springframework.web.multipart.support.StandardServletMultipartResolver.resolveMultipart(StandardServletMultipartResolver.java:112)
+	at org.springframework.web.servlet.DispatcherServlet.checkMultipart(DispatcherServlet.java:1218)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1052)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:973)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:859)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1734)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-06-12 20:58:41,284 [main] INFO  c.s.starter.SmartbotApplication [Line:51 ] - Starting SmartbotApplication using Java 17.0.1 with PID 11060 (C:\newfolder\javaweb\smartbot\portal\target\classes started by 12135 in C:\newfolder\javaweb\smartbot)
+2023-06-12 20:58:41,288 [main] INFO  c.s.starter.SmartbotApplication [Line:630] - No active profile set, falling back to 1 default profile: "default"
+2023-06-12 20:58:42,187 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [Line:291] - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-06-12 20:58:42,194 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [Line:138] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-06-12 20:58:42,230 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [Line:208] - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2023-06-12 20:58:42,840 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [Line:108] - Tomcat initialized with port(s): 8080 (http)
+2023-06-12 20:58:42,851 [main] INFO  o.a.coyote.http11.Http11NioProtocol [Line:173] - Initializing ProtocolHandler ["http-nio-8080"]
+2023-06-12 20:58:42,852 [main] INFO  o.a.catalina.core.StandardService [Line:173] - Starting service [Tomcat]
+2023-06-12 20:58:42,852 [main] INFO  o.a.catalina.core.StandardEngine [Line:173] - Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-06-12 20:58:42,956 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [Line:173] - Initializing Spring embedded WebApplicationContext
+2023-06-12 20:58:42,956 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [Line:291] - Root WebApplicationContext: initialization completed in 1612 ms
+2023-06-12 20:58:44,172 [main] INFO  o.a.coyote.http11.Http11NioProtocol [Line:173] - Starting ProtocolHandler ["http-nio-8080"]
+2023-06-12 20:58:44,189 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [Line:220] - Tomcat started on port(s): 8080 (http) with context path ''
+2023-06-12 20:58:44,207 [main] INFO  c.s.starter.SmartbotApplication [Line:57 ] - Started SmartbotApplication in 3.296 seconds (process running for 3.908)
+2023-06-12 20:58:47,181 [http-nio-8080-exec-6] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [Line:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-12 20:58:47,181 [http-nio-8080-exec-6] INFO  o.s.web.servlet.DispatcherServlet [Line:532] - Initializing Servlet 'dispatcherServlet'
+2023-06-12 20:58:47,182 [http-nio-8080-exec-6] INFO  o.s.web.servlet.DispatcherServlet [Line:554] - Completed initialization in 1 ms
+2023-06-12 20:59:16,536 [main] INFO  c.s.starter.SmartbotApplication [Line:51 ] - Starting SmartbotApplication using Java 17.0.1 with PID 14688 (C:\newfolder\javaweb\smartbot\portal\target\classes started by 12135 in C:\newfolder\javaweb\smartbot)
+2023-06-12 20:59:16,543 [main] INFO  c.s.starter.SmartbotApplication [Line:630] - No active profile set, falling back to 1 default profile: "default"
+2023-06-12 20:59:17,933 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [Line:291] - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-06-12 20:59:17,945 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [Line:138] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-06-12 20:59:18,003 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [Line:208] - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2023-06-12 20:59:19,010 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [Line:108] - Tomcat initialized with port(s): 8080 (http)
+2023-06-12 20:59:19,026 [main] INFO  o.a.coyote.http11.Http11NioProtocol [Line:173] - Initializing ProtocolHandler ["http-nio-8080"]
+2023-06-12 20:59:19,028 [main] INFO  o.a.catalina.core.StandardService [Line:173] - Starting service [Tomcat]
+2023-06-12 20:59:19,028 [main] INFO  o.a.catalina.core.StandardEngine [Line:173] - Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-06-12 20:59:19,193 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [Line:173] - Initializing Spring embedded WebApplicationContext
+2023-06-12 20:59:19,195 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [Line:291] - Root WebApplicationContext: initialization completed in 2561 ms
+2023-06-12 20:59:21,565 [main] INFO  o.a.coyote.http11.Http11NioProtocol [Line:173] - Starting ProtocolHandler ["http-nio-8080"]
+2023-06-12 20:59:21,850 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [Line:220] - Tomcat started on port(s): 8080 (http) with context path ''
+2023-06-12 20:59:21,980 [main] INFO  c.s.starter.SmartbotApplication [Line:57 ] - Started SmartbotApplication in 6.23 seconds (process running for 7.848)
+2023-06-12 20:59:38,379 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [Line:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-12 20:59:38,380 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet [Line:532] - Initializing Servlet 'dispatcherServlet'
+2023-06-12 20:59:38,381 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet [Line:554] - Completed initialization in 1 ms
+2023-06-12 20:59:55,283 [http-nio-8080-exec-3] INFO  c.alibaba.druid.pool.DruidDataSource [Line:930] - {dataSource-1} inited
+2023-06-12 21:10:51,742 [SpringApplicationShutdownHook] INFO  c.alibaba.druid.pool.DruidDataSource [Line:1825] - {dataSource-1} closed
+2023-06-12 21:11:00,936 [main] INFO  c.s.starter.SmartbotApplication [Line:51 ] - Starting SmartbotApplication using Java 17.0.1 with PID 20844 (C:\newfolder\javaweb\smartbot\portal\target\classes started by 12135 in C:\newfolder\javaweb\smartbot)
+2023-06-12 21:11:00,943 [main] INFO  c.s.starter.SmartbotApplication [Line:630] - No active profile set, falling back to 1 default profile: "default"
+2023-06-12 21:11:02,308 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [Line:291] - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-06-12 21:11:02,314 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [Line:138] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-06-12 21:11:02,377 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [Line:208] - Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+2023-06-12 21:11:03,421 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [Line:108] - Tomcat initialized with port(s): 8080 (http)
+2023-06-12 21:11:03,434 [main] INFO  o.a.coyote.http11.Http11NioProtocol [Line:173] - Initializing ProtocolHandler ["http-nio-8080"]
+2023-06-12 21:11:03,435 [main] INFO  o.a.catalina.core.StandardService [Line:173] - Starting service [Tomcat]
+2023-06-12 21:11:03,435 [main] INFO  o.a.catalina.core.StandardEngine [Line:173] - Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-06-12 21:11:03,622 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [Line:173] - Initializing Spring embedded WebApplicationContext
+2023-06-12 21:11:03,626 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [Line:291] - Root WebApplicationContext: initialization completed in 2585 ms
+2023-06-12 21:11:05,586 [main] INFO  o.a.coyote.http11.Http11NioProtocol [Line:173] - Starting ProtocolHandler ["http-nio-8080"]
+2023-06-12 21:11:05,616 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [Line:220] - Tomcat started on port(s): 8080 (http) with context path ''
+2023-06-12 21:11:05,649 [main] INFO  c.s.starter.SmartbotApplication [Line:57 ] - Started SmartbotApplication in 5.51 seconds (process running for 7.678)
+2023-06-12 21:11:08,652 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [Line:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-12 21:11:08,653 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet [Line:532] - Initializing Servlet 'dispatcherServlet'
+2023-06-12 21:11:08,655 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet [Line:554] - Completed initialization in 2 ms
+2023-06-12 21:11:08,814 [http-nio-8080-exec-1] INFO  c.alibaba.druid.pool.DruidDataSource [Line:930] - {dataSource-1} inited
+2023-06-12 21:13:58,708 [SpringApplicationShutdownHook] INFO  c.alibaba.druid.pool.DruidDataSource [Line:1825] - {dataSource-1} closed
+2023-06-12 21:15:13,178 [main] INFO  c.s.starter.SmartbotApplication [Line:51 ] - Starting SmartbotApplication using Java 17.0.1 with PID 7584 (C:\newfolder\javaweb\smartbot\portal\target\classes started by 12135 in C:\newfolder\javaweb\smartbot)
+2023-06-12 21:15:13,184 [main] INFO  c.s.starter.SmartbotApplication [Line:630] - No active profile set, falling back to 1 default profile: "default"
+2023-06-12 21:15:14,629 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [Line:291] - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-06-12 21:15:14,644 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [Line:138] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-06-12 21:15:14,705 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [Line:208] - Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+2023-06-12 21:15:15,645 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [Line:108] - Tomcat initialized with port(s): 8080 (http)
+2023-06-12 21:15:15,659 [main] INFO  o.a.coyote.http11.Http11NioProtocol [Line:173] - Initializing ProtocolHandler ["http-nio-8080"]
+2023-06-12 21:15:15,659 [main] INFO  o.a.catalina.core.StandardService [Line:173] - Starting service [Tomcat]
+2023-06-12 21:15:15,659 [main] INFO  o.a.catalina.core.StandardEngine [Line:173] - Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-06-12 21:15:15,830 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [Line:173] - Initializing Spring embedded WebApplicationContext
+2023-06-12 21:15:15,831 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [Line:291] - Root WebApplicationContext: initialization completed in 2553 ms
+2023-06-12 21:15:17,757 [main] INFO  o.a.coyote.http11.Http11NioProtocol [Line:173] - Starting ProtocolHandler ["http-nio-8080"]
+2023-06-12 21:15:17,780 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [Line:220] - Tomcat started on port(s): 8080 (http) with context path ''
+2023-06-12 21:15:17,798 [main] INFO  c.s.starter.SmartbotApplication [Line:57 ] - Started SmartbotApplication in 5.32 seconds (process running for 6.747)
+2023-06-12 21:15:47,412 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [Line:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-12 21:15:47,412 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet [Line:532] - Initializing Servlet 'dispatcherServlet'
+2023-06-12 21:15:47,414 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet [Line:554] - Completed initialization in 2 ms
+2023-06-12 21:15:47,488 [http-nio-8080-exec-2] INFO  c.alibaba.druid.pool.DruidDataSource [Line:930] - {dataSource-1} inited
+2023-06-12 21:22:47,599 [SpringApplicationShutdownHook] INFO  c.alibaba.druid.pool.DruidDataSource [Line:1825] - {dataSource-1} closed
+2023-06-12 21:22:53,367 [main] INFO  c.s.starter.SmartbotApplication [Line:51 ] - Starting SmartbotApplication using Java 17.0.1 with PID 5496 (C:\newfolder\javaweb\smartbot\portal\target\classes started by 12135 in C:\newfolder\javaweb\smartbot)
+2023-06-12 21:22:53,372 [main] INFO  c.s.starter.SmartbotApplication [Line:630] - No active profile set, falling back to 1 default profile: "default"
+2023-06-12 21:22:54,225 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [Line:291] - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-06-12 21:22:54,228 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [Line:138] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-06-12 21:22:54,264 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [Line:208] - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2023-06-12 21:22:54,846 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [Line:108] - Tomcat initialized with port(s): 8080 (http)
+2023-06-12 21:22:54,855 [main] INFO  o.a.coyote.http11.Http11NioProtocol [Line:173] - Initializing ProtocolHandler ["http-nio-8080"]
+2023-06-12 21:22:54,855 [main] INFO  o.a.catalina.core.StandardService [Line:173] - Starting service [Tomcat]
+2023-06-12 21:22:54,856 [main] INFO  o.a.catalina.core.StandardEngine [Line:173] - Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-06-12 21:22:54,942 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [Line:173] - Initializing Spring embedded WebApplicationContext
+2023-06-12 21:22:54,942 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [Line:291] - Root WebApplicationContext: initialization completed in 1501 ms
+2023-06-12 21:22:55,973 [main] INFO  o.a.coyote.http11.Http11NioProtocol [Line:173] - Starting ProtocolHandler ["http-nio-8080"]
+2023-06-12 21:22:55,991 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [Line:220] - Tomcat started on port(s): 8080 (http) with context path ''
+2023-06-12 21:22:56,006 [main] INFO  c.s.starter.SmartbotApplication [Line:57 ] - Started SmartbotApplication in 3.152 seconds (process running for 4.105)
+2023-06-12 21:23:48,417 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [Line:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-12 21:23:48,417 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet [Line:532] - Initializing Servlet 'dispatcherServlet'
+2023-06-12 21:23:48,418 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet [Line:554] - Completed initialization in 1 ms
+2023-06-12 21:23:48,481 [http-nio-8080-exec-2] INFO  c.alibaba.druid.pool.DruidDataSource [Line:930] - {dataSource-1} inited
+2023-06-12 21:29:56,903 [SpringApplicationShutdownHook] INFO  c.alibaba.druid.pool.DruidDataSource [Line:1825] - {dataSource-1} closed
+2023-06-12 21:30:01,547 [main] INFO  c.s.starter.SmartbotApplication [Line:51 ] - Starting SmartbotApplication using Java 17.0.1 with PID 16332 (C:\newfolder\javaweb\smartbot\portal\target\classes started by 12135 in C:\newfolder\javaweb\smartbot)
+2023-06-12 21:30:01,554 [main] INFO  c.s.starter.SmartbotApplication [Line:630] - No active profile set, falling back to 1 default profile: "default"
+2023-06-12 21:30:02,434 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [Line:291] - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-06-12 21:30:02,443 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [Line:138] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-06-12 21:30:02,481 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [Line:208] - Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2023-06-12 21:30:03,095 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [Line:108] - Tomcat initialized with port(s): 8080 (http)
+2023-06-12 21:30:03,105 [main] INFO  o.a.coyote.http11.Http11NioProtocol [Line:173] - Initializing ProtocolHandler ["http-nio-8080"]
+2023-06-12 21:30:03,106 [main] INFO  o.a.catalina.core.StandardService [Line:173] - Starting service [Tomcat]
+2023-06-12 21:30:03,106 [main] INFO  o.a.catalina.core.StandardEngine [Line:173] - Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-06-12 21:30:03,212 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [Line:173] - Initializing Spring embedded WebApplicationContext
+2023-06-12 21:30:03,212 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [Line:291] - Root WebApplicationContext: initialization completed in 1595 ms
+2023-06-12 21:30:04,370 [main] INFO  o.a.coyote.http11.Http11NioProtocol [Line:173] - Starting ProtocolHandler ["http-nio-8080"]
+2023-06-12 21:30:04,390 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [Line:220] - Tomcat started on port(s): 8080 (http) with context path ''
+2023-06-12 21:30:04,409 [main] INFO  c.s.starter.SmartbotApplication [Line:57 ] - Started SmartbotApplication in 3.376 seconds (process running for 4.321)
+2023-06-12 21:30:08,418 [http-nio-8080-exec-3] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [Line:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-12 21:30:08,418 [http-nio-8080-exec-3] INFO  o.s.web.servlet.DispatcherServlet [Line:532] - Initializing Servlet 'dispatcherServlet'
+2023-06-12 21:30:08,419 [http-nio-8080-exec-3] INFO  o.s.web.servlet.DispatcherServlet [Line:554] - Completed initialization in 1 ms
+2023-06-12 21:30:08,483 [http-nio-8080-exec-3] INFO  c.alibaba.druid.pool.DruidDataSource [Line:930] - {dataSource-1} inited
+2023-06-12 21:30:29,155 [SpringApplicationShutdownHook] INFO  c.alibaba.druid.pool.DruidDataSource [Line:1825] - {dataSource-1} closed
+2023-06-12 21:30:33,630 [main] INFO  c.s.starter.SmartbotApplication [Line:51 ] - Starting SmartbotApplication using Java 17.0.1 with PID 2872 (C:\newfolder\javaweb\smartbot\portal\target\classes started by 12135 in C:\newfolder\javaweb\smartbot)
+2023-06-12 21:30:33,634 [main] INFO  c.s.starter.SmartbotApplication [Line:630] - No active profile set, falling back to 1 default profile: "default"
+2023-06-12 21:30:34,459 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [Line:291] - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-06-12 21:30:34,468 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [Line:138] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-06-12 21:30:34,506 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [Line:208] - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2023-06-12 21:30:35,092 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [Line:108] - Tomcat initialized with port(s): 8080 (http)
+2023-06-12 21:30:35,101 [main] INFO  o.a.coyote.http11.Http11NioProtocol [Line:173] - Initializing ProtocolHandler ["http-nio-8080"]
+2023-06-12 21:30:35,102 [main] INFO  o.a.catalina.core.StandardService [Line:173] - Starting service [Tomcat]
+2023-06-12 21:30:35,102 [main] INFO  o.a.catalina.core.StandardEngine [Line:173] - Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-06-12 21:30:35,192 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [Line:173] - Initializing Spring embedded WebApplicationContext
+2023-06-12 21:30:35,193 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [Line:291] - Root WebApplicationContext: initialization completed in 1499 ms
+2023-06-12 21:30:36,222 [main] INFO  o.a.coyote.http11.Http11NioProtocol [Line:173] - Starting ProtocolHandler ["http-nio-8080"]
+2023-06-12 21:30:36,239 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [Line:220] - Tomcat started on port(s): 8080 (http) with context path ''
+2023-06-12 21:30:36,259 [main] INFO  c.s.starter.SmartbotApplication [Line:57 ] - Started SmartbotApplication in 3.121 seconds (process running for 4.038)
+2023-06-12 21:30:43,655 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [Line:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-12 21:30:43,655 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet [Line:532] - Initializing Servlet 'dispatcherServlet'
+2023-06-12 21:30:43,656 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet [Line:554] - Completed initialization in 1 ms
+2023-06-12 21:30:43,717 [http-nio-8080-exec-2] INFO  c.alibaba.druid.pool.DruidDataSource [Line:930] - {dataSource-1} inited
+2023-06-12 21:40:13,911 [SpringApplicationShutdownHook] INFO  c.alibaba.druid.pool.DruidDataSource [Line:1825] - {dataSource-1} closed
+2023-06-12 21:40:19,117 [main] INFO  c.s.starter.SmartbotApplication [Line:51 ] - Starting SmartbotApplication using Java 17.0.1 with PID 18168 (C:\newfolder\javaweb\smartbot\portal\target\classes started by 12135 in C:\newfolder\javaweb\smartbot)
+2023-06-12 21:40:19,126 [main] INFO  c.s.starter.SmartbotApplication [Line:630] - No active profile set, falling back to 1 default profile: "default"
+2023-06-12 21:40:20,053 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [Line:291] - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-06-12 21:40:20,056 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [Line:138] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-06-12 21:40:20,096 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [Line:208] - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2023-06-12 21:40:20,731 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [Line:108] - Tomcat initialized with port(s): 8080 (http)
+2023-06-12 21:40:20,742 [main] INFO  o.a.coyote.http11.Http11NioProtocol [Line:173] - Initializing ProtocolHandler ["http-nio-8080"]
+2023-06-12 21:40:20,743 [main] INFO  o.a.catalina.core.StandardService [Line:173] - Starting service [Tomcat]
+2023-06-12 21:40:20,743 [main] INFO  o.a.catalina.core.StandardEngine [Line:173] - Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-06-12 21:40:20,848 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [Line:173] - Initializing Spring embedded WebApplicationContext
+2023-06-12 21:40:20,849 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [Line:291] - Root WebApplicationContext: initialization completed in 1634 ms
+2023-06-12 21:40:22,043 [main] INFO  o.a.coyote.http11.Http11NioProtocol [Line:173] - Starting ProtocolHandler ["http-nio-8080"]
+2023-06-12 21:40:22,061 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [Line:220] - Tomcat started on port(s): 8080 (http) with context path ''
+2023-06-12 21:40:22,076 [main] INFO  c.s.starter.SmartbotApplication [Line:57 ] - Started SmartbotApplication in 3.558 seconds (process running for 4.772)
+2023-06-12 21:40:23,636 [http-nio-8080-exec-3] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [Line:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-12 21:40:23,636 [http-nio-8080-exec-3] INFO  o.s.web.servlet.DispatcherServlet [Line:532] - Initializing Servlet 'dispatcherServlet'
+2023-06-12 21:40:23,637 [http-nio-8080-exec-3] INFO  o.s.web.servlet.DispatcherServlet [Line:554] - Completed initialization in 1 ms
+2023-06-12 21:40:23,693 [http-nio-8080-exec-3] WARN  c.b.m.c.t.support.ReflectLambdaMeta [Line:41 ] - Unable to make field private final java.lang.Class java.lang.invoke.SerializedLambda.capturingClass accessible: module java.base does not "opens java.lang.invoke" to unnamed module @6aba2b86
+2023-06-12 21:40:23,725 [http-nio-8080-exec-3] INFO  c.alibaba.druid.pool.DruidDataSource [Line:930] - {dataSource-1} inited
+2023-06-12 21:45:07,400 [SpringApplicationShutdownHook] INFO  c.alibaba.druid.pool.DruidDataSource [Line:1825] - {dataSource-1} closed
+2023-06-12 21:45:12,241 [main] INFO  c.s.starter.SmartbotApplication [Line:51 ] - Starting SmartbotApplication using Java 17.0.1 with PID 12596 (C:\newfolder\javaweb\smartbot\portal\target\classes started by 12135 in C:\newfolder\javaweb\smartbot)
+2023-06-12 21:45:12,250 [main] INFO  c.s.starter.SmartbotApplication [Line:630] - No active profile set, falling back to 1 default profile: "default"
+2023-06-12 21:45:13,269 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [Line:291] - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-06-12 21:45:13,272 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [Line:138] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-06-12 21:45:13,312 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [Line:208] - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2023-06-12 21:45:13,973 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [Line:108] - Tomcat initialized with port(s): 8080 (http)
+2023-06-12 21:45:13,983 [main] INFO  o.a.coyote.http11.Http11NioProtocol [Line:173] - Initializing ProtocolHandler ["http-nio-8080"]
+2023-06-12 21:45:13,984 [main] INFO  o.a.catalina.core.StandardService [Line:173] - Starting service [Tomcat]
+2023-06-12 21:45:13,984 [main] INFO  o.a.catalina.core.StandardEngine [Line:173] - Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-06-12 21:45:14,092 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [Line:173] - Initializing Spring embedded WebApplicationContext
+2023-06-12 21:45:14,093 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [Line:291] - Root WebApplicationContext: initialization completed in 1728 ms
+2023-06-12 21:45:15,349 [main] INFO  o.a.coyote.http11.Http11NioProtocol [Line:173] - Starting ProtocolHandler ["http-nio-8080"]
+2023-06-12 21:45:15,379 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [Line:220] - Tomcat started on port(s): 8080 (http) with context path ''
+2023-06-12 21:45:15,404 [main] INFO  c.s.starter.SmartbotApplication [Line:57 ] - Started SmartbotApplication in 3.743 seconds (process running for 4.948)
+2023-06-12 21:45:36,473 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [Line:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-12 21:45:36,473 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet [Line:532] - Initializing Servlet 'dispatcherServlet'
+2023-06-12 21:45:36,474 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet [Line:554] - Completed initialization in 1 ms
+2023-06-12 21:45:36,567 [http-nio-8080-exec-1] INFO  c.alibaba.druid.pool.DruidDataSource [Line:930] - {dataSource-1} inited
+2023-06-12 21:46:01,372 [SpringApplicationShutdownHook] INFO  c.alibaba.druid.pool.DruidDataSource [Line:1825] - {dataSource-1} closed

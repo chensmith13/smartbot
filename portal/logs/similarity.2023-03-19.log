@@ -1,0 +1,30 @@
+2023-03-19 00:37:27,150 [main] INFO  com.smartbot.starter.test [Line:51 ] - Starting test using Java 17.0.1 with PID 19996 (started by 12135 in C:\newfolder\javaweb\smartbot\portal)
+2023-03-19 00:37:27,152 [main] INFO  com.smartbot.starter.test [Line:630] - No active profile set, falling back to 1 default profile: "default"
+2023-03-19 00:37:28,315 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [Line:291] - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-03-19 00:37:28,319 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [Line:138] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-03-19 00:37:28,367 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [Line:208] - Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2023-03-19 00:37:31,425 [main] INFO  com.smartbot.starter.test [Line:57 ] - Started test in 4.824 seconds (process running for 7.292)
+2023-03-19 00:38:13,505 [main] INFO  com.smartbot.starter.test [Line:51 ] - Starting test using Java 17.0.1 with PID 18712 (started by 12135 in C:\newfolder\javaweb\smartbot\portal)
+2023-03-19 00:38:13,506 [main] INFO  com.smartbot.starter.test [Line:630] - No active profile set, falling back to 1 default profile: "default"
+2023-03-19 00:38:14,477 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [Line:291] - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-03-19 00:38:14,480 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [Line:138] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-03-19 00:38:14,527 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [Line:208] - Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2023-03-19 00:38:17,600 [main] INFO  com.smartbot.starter.test [Line:57 ] - Started test in 4.38 seconds (process running for 5.684)
+2023-03-19 00:41:14,891 [main] INFO  com.smartbot.starter.test [Line:51 ] - Starting test using Java 17.0.1 with PID 6196 (started by 12135 in C:\newfolder\javaweb\smartbot\portal)
+2023-03-19 00:41:14,894 [main] INFO  com.smartbot.starter.test [Line:630] - No active profile set, falling back to 1 default profile: "default"
+2023-03-19 00:41:16,148 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [Line:291] - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-03-19 00:41:16,154 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [Line:138] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-03-19 00:41:16,242 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [Line:208] - Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
+2023-03-19 00:41:19,252 [main] INFO  com.smartbot.starter.test [Line:57 ] - Started test in 4.864 seconds (process running for 6.506)
+2023-03-19 00:43:39,233 [main] INFO  com.smartbot.starter.test [Line:51 ] - Starting test using Java 17.0.1 with PID 8252 (started by 12135 in C:\newfolder\javaweb\smartbot\portal)
+2023-03-19 00:43:39,235 [main] INFO  com.smartbot.starter.test [Line:630] - No active profile set, falling back to 1 default profile: "default"
+2023-03-19 00:43:40,323 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [Line:291] - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-03-19 00:43:40,329 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [Line:138] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-03-19 00:43:40,384 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [Line:208] - Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2023-03-19 00:43:43,500 [main] INFO  com.smartbot.starter.test [Line:57 ] - Started test in 4.673 seconds (process running for 6.136)
+2023-03-19 00:47:28,226 [main] INFO  com.smartbot.starter.test [Line:51 ] - Starting test using Java 17.0.1 with PID 12240 (started by 12135 in C:\newfolder\javaweb\smartbot\portal)
+2023-03-19 00:47:28,227 [main] INFO  com.smartbot.starter.test [Line:630] - No active profile set, falling back to 1 default profile: "default"
+2023-03-19 00:47:28,890 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [Line:291] - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-03-19 00:47:28,892 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [Line:138] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-03-19 00:47:28,924 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [Line:208] - Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+2023-03-19 00:47:30,612 [main] INFO  com.smartbot.starter.test [Line:57 ] - Started test in 2.655 seconds (process running for 3.746)
